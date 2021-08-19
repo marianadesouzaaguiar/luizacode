@@ -59,3 +59,90 @@ var idade = 20;
 var check =  (idade >= 16 && idade <= 18) || (idade > 60)  ? 'Você vai pagar meia entrada' : "Você vai pagar inteira"
 
 console.log(check)
+
+
+
+let massa = 51;
+let height = 1.66;
+let indice = massa / (height * height);
+
+if (indice < 19.1){
+    console.log("abaixo do peso")
+}else if (indice > 19.1 && imc < 25.8){
+    console.log("peso normal")
+}else if (indice > 25.8 && imc < 27.3) {
+    console.log("marginalmente acima do peso")
+}else if(indice > 27.3 && imc < 32.3){
+    console.log("acima do peso")
+}else {
+    console.log("Lascou!!!!")
+}
+
+var letra = "E"
+
+switch (letra) {
+    case 'A':
+        console.log('Anne')
+        break
+    case 'B':
+        console.log('Bianca')
+        break
+    case 'C':
+        console.log('Carla')
+        break
+    case 'D':
+        console.log('Dani')
+        break
+    default:
+        console.log('letra indisponível')
+}
+
+var codigo = 100;
+var qtdade = 5;
+
+switch (codigo) {
+    case 100:
+        total = 1.20 * qtdade
+        console.log(`seu pedido custa R$ ${total}`)
+        break
+    case 101:
+        total = 1.30 * qtdade
+        console.log(`seu pedido custa R$ ${total}`)
+        break
+    case 102:
+        total = 1.50 * qtdade
+        console.log(`seu pedido custa ${total}`)
+        break
+    case 103:
+        total = 1.20 * qtdade
+        console.log(`seu pedido custa ${total}`)
+        break
+    case 104:
+        total = 1.30 * qtdade
+        console.log(`seu pedido custa ${total}`)
+        break
+    case 105:
+        total = 1.00 * qtdade
+        console.log(`seu pedido custa ${total}`)
+        break
+    default:
+        console.log('faça outro pedido! código inválido')
+}
+
+
+let numero;
+
+     for (let numero = 10; (numero <= 500) ; numero++){
+         if(numero % 18 == 0){
+            console.log(`o numero é ${numero}`)
+            break;
+         }
+     }
+
+
+var count = 0;
+
+while (count < 10) {
+    console.log(count)
+    count++
+}
